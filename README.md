@@ -1,3 +1,3 @@
-![logo](https://cdn.comedy.co.uk/images/library/comedies/900x450/m/monty_pythons_flying_circus.jpg "Monty Python's Flying Circus")
+![logo](https://krui.fm/wordpress/wp-content/uploads/2018/04/Monty-Pythons-Flying-Circus-1-768x432.jpg "Monty Python's Flying Circus")
 
 # Higher-level programming

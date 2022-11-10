@@ -105,4 +105,4 @@ class Square:
         string += "\n".join([" " * self.__position[0] +
                              "#" * self.__size
                              for rows in range(self.__size)])
-        return 
+        return string

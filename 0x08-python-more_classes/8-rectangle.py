@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""
+"""
 Contains class Rectangle with private attribute width and height,
 public area and perimeter methods, allows printing using any given symbol,
 deletes, has public attribute to keep track of number of instances,

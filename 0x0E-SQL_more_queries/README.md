@@ -12,7 +12,7 @@
 * What are JOIN and UNION
 ---
 ### connecting to the MySQL server
-`
+```bash
 $ sudo mysql
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 11
@@ -30,9 +30,9 @@ mysql>
 mysql> quit
 Bye
 $
-`
+```
 ### Use “container-on-demand” to run MySQ
-`
+```bash
 $ service mysql start                                                   
  * Starting MySQL database server mysqld 
 $
@@ -43,10 +43,10 @@ mysql
 performance_schema                                                                         
 sys                      
 $
-`
+```
 
 ### How to import a SQL dump
-`
+```bash
 $ echo "CREATE DATABASE hbtn_0d_tvshows;" | mysql -uroot -p
 Enter password: 
 $ curl "https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql" -s | mysql -uroot -p hbtn_0d_tvshows
@@ -63,5 +63,5 @@ id  name
 7   Suspense
 8   Thriller
 $
-`
+```
 

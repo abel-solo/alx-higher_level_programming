@@ -1,3 +1,3 @@
 #!/usr/bin/node
 
-console.log("i"+"s");
+console.log('i'+'s');

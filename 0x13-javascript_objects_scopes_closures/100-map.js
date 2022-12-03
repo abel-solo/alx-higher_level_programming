@@ -1,8 +1,7 @@
 #!/usr/bin/node
+const list = require('./100-data').list;
 
-exports.converter = function (base) {
-  function convert (n) {
-    return n.toString(base);
-  }
-  return convert;
-};
+const newList = list.map((x, index) => x * index);
+
+console.log(list);
+console.log(newList);

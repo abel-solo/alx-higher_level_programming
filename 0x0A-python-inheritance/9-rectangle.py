@@ -6,7 +6,6 @@ Contains subclass Rectangle
 with instantiation of private attributes width and height, validated by parent,
 extends parent's area method and prints with __str__
 """
-
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 

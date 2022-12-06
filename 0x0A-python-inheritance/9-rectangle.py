@@ -32,4 +32,3 @@ class Rectangle(BaseGeometry):
         """overrides string representation of Rectangle"""
         rect = "[Rectangle] " + str(self.__width) + "/" + str(self.__height)
         return rect
-

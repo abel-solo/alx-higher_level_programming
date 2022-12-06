@@ -7,30 +7,30 @@ with instantiation of private attributes width and height, validated by parent,
 extends parent's area method and prints with __str__
 """
 
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
 
 class Rectangle(BaseGeometry):
-    """inherits from BaseGeometry
-    Methods:
-        __init__(self, width, height)
-        area(self)
-        __str__
+    """
+    validates width and height values
+    using integer_validator property inherited @ 7-base_geometry
+    Args:
+        width (int): rectangle width
+        height (int): rectangle height
     """
     def __init__(self, width, height):
-        """validate and initialize width and height
-        Args:
-            width (int): private
-            height (int): private
-        """
+        """validates and initializes width and height of rectangle"""
         self.integer_validator("width", width)
-        self.integer_validator("height", height)
         self.__width = width
+        self.integer_validator("height", height)
         self.__height = height
 
     def area(self):
-        """extends parent's empty method and returns area"""
+        """returns rectangle area"""
         return self.__width * self.__height
 
     def __str__(self):
-        """prints [Rectangle] <width>/<height>"""
-        return "[{:s}] {:d}/{:d}".format(self.__class__.__name__,
-                                         self.__width, self.__height)
+        """overrides string representation of Rectangle"""
+        rect = "[Rectangle] " + str(self.__width) + "/" + str(self.__height)
+        return rect
+

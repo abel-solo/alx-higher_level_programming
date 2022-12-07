@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Mdule contains class Base
+Module contains class Base
 Contains private class __nb_objects, and class constructor __init__
 Returns JSON string representation of list dictionaries
 Saves JSON strings of instance dictionaries into file
@@ -9,9 +9,10 @@ Returns instance with attributes already set
 Returns list of instances
 Saves to CSV and loads from CSV file
 """
+
+
 import json
 import csv
-import turtle
 
 
 class Base():

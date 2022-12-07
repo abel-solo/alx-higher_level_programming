@@ -1,4 +1,4 @@
-!#/usr/bin/python3
+#!/usr/bin/python3
 """
 sript reads stdin line by line and computes metrics
 Input format:

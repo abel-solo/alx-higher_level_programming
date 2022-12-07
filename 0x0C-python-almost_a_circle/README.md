@@ -3,7 +3,10 @@
 This project will review everything about Python:
 
 <detailes>
-	<summary>section header </summary>
+<summary>Import</summary>
+<summary>Exception</summary>
+<summary>Import</summary>
+</detailes>
 Import
 Exceptions
 Class
@@ -14,4 +17,4 @@ Static method
 Inheritance
 Unittest
 Read/Write file
-</detailes>
+

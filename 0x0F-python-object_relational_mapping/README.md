@@ -24,8 +24,6 @@ ORMs provide a high-level abstraction upon a relational database that allows a d
 
 ---
 ### Authors
-<img src=""https://i.imgur.com/8sNeTnV.png width="150" height="280"> [Abel Solomon](https://twitter.com/abelshewaye)
-
 [![image](https://i.imgur.com/pkC4PUn.png)](https://twitter.com/abelshewaye) [Abel Solomon](https://twitter.com/abelshewaye)
 
 

@@ -21,7 +21,7 @@ if __name__ == "__main__":
     cursor.execute(sql_cmd, (argv[4], ))
 
     cities = ["{:s}".format(row[0]) for row in cursor.fetchall()]
-    print('- '.join(cities))
+    print(', '.join(cities))
 
     cursor.close()
     db.close()

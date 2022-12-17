@@ -12,5 +12,4 @@ if __name__ == '__main__':
     current.execute("SELECT * FROM states WHERE BINARY name = '{}'"
                 .format(sys.argv[4]))
     [print(state) for state in current.fetchall()]
-    current.close()
-    db.close()
+    

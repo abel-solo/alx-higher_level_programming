@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
 contains the class definition of a City
-inherits from Base (imported from model_state)
 """
 
 from sys import argv

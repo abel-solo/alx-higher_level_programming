@@ -3,18 +3,26 @@
 script that takes in an argument and displays all values in the states table of hbtn_0e_0_usa where name matches the argument
 """
 
-import sys
+from sys import argv
 import MySQLdb
 
 if __name__ == "__main__":
-    db = MySQLdb.connect(user=argv[1], port=3306, host="localhost",
-                         passwd=argv[2], db=argv[3])
-    current = db.cursor()
-    current.execute("SELECT * FROM states WHERE name LIKE '{:s}' ORDER BY \
-    id ASC".format(argv[4]))
-    states = current.fetchall()
-    for state in states:
+
+    # connecting to the database
+    db = MySQLdb.connect(host="localhost",
+                         port=3306,
+                         user=argv[1],
+                         passwd=argv[2],
+                         db=argv[3])
+
+    # create cursor to exec queries using SQL; match arg given
+    cursor = db.cursor()
+    sql_cmd = """SELECT *
+                 FROM states
+                 WHERE name LIKE '{:s}' ORDER BY id ASC""".format(argv[4])
+    cursor.execute(sql_cmd)
+    for state in cursor.fetchall():
         if state[1] == argv[4]:
             print(state)
-    current.close()
+    cursor.close()
     db.close()

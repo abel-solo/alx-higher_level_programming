@@ -1,15 +1,13 @@
 #!/usr/bin/python3
 """
-   script that takes in arguments and displays all values in the states tab   le of hbtn_0e_0_usa
-   where name matches the argument. But this time, write one that is safe     from MySQL injections!
+   script that takes arguments displays all values in the states table of hbtn_0e_0_usa
+   write a script that is safe from MySQL injections!
 """
 
 from sys import argv
 import MySQLdb
 
 if __name__ == "__main__":
-
-    # connect to database
     db = MySQLdb.connect(host="localhost",
                          port=3306,
                          user=argv[1],

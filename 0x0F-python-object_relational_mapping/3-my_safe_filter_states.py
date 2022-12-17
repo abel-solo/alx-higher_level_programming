@@ -4,6 +4,9 @@
    where name matches the argument. But this time, write one that is safe     from MySQL injections!
 """
 
+from sys import argv
+import MYSQLdb
+
 if __name__ == "__main__":
 
     # connect to database

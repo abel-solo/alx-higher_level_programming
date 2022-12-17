@@ -5,7 +5,7 @@
 """
 
 from sys import argv
-import MYSQLdb
+import MySQLdb
 
 if __name__ == "__main__":
 

@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 """
-   script that takes arguments displays all values in the states table of hbtn_0e_0_usa
    write a script that is safe from MySQL injections!
 """
 
+
 from sys import argv
 import MySQLdb
+
 
 if __name__ == "__main__":
     db = MySQLdb.connect(host="localhost",

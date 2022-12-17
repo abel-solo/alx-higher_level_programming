@@ -24,6 +24,6 @@ if __name__ == "__main__":
     if first_instance:
         print("{:d}: {:s}".format(first_instance.id, first_instance.name))
     else:
-        pass
+        print("Nothing")
 
     session.close()

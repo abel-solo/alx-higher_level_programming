@@ -4,6 +4,7 @@ script that lists all State objects from the database hbtn_0e_6_usa
 3 arguments: mysql username, mysql password and database name
 """
 
+
 from sys import argv
 from model_state import Base, State
 from sqlalchemy import create_engine

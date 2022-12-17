@@ -3,8 +3,10 @@
 script takes name of a state as argument and lists all cities of that state
 """
 
+
 import MySQLdb
 from sys import argv
+
 
 if __name__ == "__main__":
     db = MySQLdb.connect(host="localhost",

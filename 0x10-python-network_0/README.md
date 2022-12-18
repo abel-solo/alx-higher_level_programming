@@ -6,4 +6,4 @@
 
 ---
 ### Authors
- 27 [![image](https://i.imgur.com/pkC4PUn.png)](https://twitter.com/abelshewaye    ) [Abel Solomon](https://twitter.com/abelshewaye)
+[![image](https://i.imgur.com/pkC4PUn.png)](https://twitter.com/abelshewaye) [Abel Solomon](https://twitter.com/abelshewaye)

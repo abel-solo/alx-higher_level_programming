@@ -3,11 +3,11 @@
 Function that finds a peak in a list of unsorted integers
 """
 
+
 def find_peak(list_of_integers):
     """
     finds num that's greater than both left and right
     """
-
     lint = list_of_integers
     if lint == []:
         return None

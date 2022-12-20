@@ -12,11 +12,13 @@ def find_peak(list_of_integers):
     lint = list_of_integers
     if lint == []:
         return None
+
     total = len(lint)
     if total == 1:
         return lint[0]
     elif total == 2:
         return max(lint)
+
     middle = int(total / 2)
     peak = lint[middle]
     if peak > lint[middle - 1] and peak > lint[middle + 1]:

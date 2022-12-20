@@ -5,25 +5,21 @@ Function that finds a peak in a list of unsorted integers
 
 
 def find_peak(list_of_integers):
-    """
-    finds num that's greater than both left and right
-    """
-
-    lint = list_of_integers
-    if lint == []:
+    """finds number that is greater than both left and right"""
+    if list_of_integers == []:
         return None
 
-    total = len(lint)
-    if total == 1:
-        return lint[0]
-    elif total == 2:
-        return max(lint)
+    size = len(list_of_integers)
+    if size == 1:
+        return list_of_integers[0]
+    elif size == 2:
+        return max(list_of_integers)
 
-    middle = int(total / 2)
-    peak = lint[middle]
-    if peak > lint[middle - 1] and peak > lint[middle + 1]:
+    mid = int(size / 2)
+    peak = list_of_integers[mid]
+    if peak > list_of_integers[mid - 1] and peak > list_of_integers[mid + 1]:
         return peak
-    elif peak < lint[middle - 1]:
-        return find_peak(lint[:middle])
+    elif peak < list_of_integers[mid - 1]:
+        return find_peak(list_of_integers[:mid])
     else:
-        return find_peak(lint[middle + 1:])
+        return find_peak(list_of_integers[mid + 1:])

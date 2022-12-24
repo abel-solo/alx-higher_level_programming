@@ -11,7 +11,6 @@ if __name__ == "__main__":
     req = Request(url)
     with urlopen(req) as response:
         page = response.read()
-
     print("Body response:")
     print("\t- type: {}".format(type(page)))
     print("\t- content: {}".format(page))

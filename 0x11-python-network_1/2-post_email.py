@@ -3,8 +3,9 @@
 script that takes in a URL and email sends a POST request to passed URL
 """
 from sys import argv
-from urllib import parse
-from urllib.request import Request, urlopen
+import urllib.parse
+import urllib.request
+
 
 if __name__ == '__main__':
     url = argv[1]

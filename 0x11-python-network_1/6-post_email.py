@@ -6,7 +6,5 @@ from sys import argv
 import requests
 
 if __name__ == "__main__":
-    url = argv[1]
-    payload = {'email': argv[2]}
-    res = requests.post(url, data=payload)
-    print(res.text)
+    req = post(argv[1], {'email': argv[2]})
+    print(req.text)

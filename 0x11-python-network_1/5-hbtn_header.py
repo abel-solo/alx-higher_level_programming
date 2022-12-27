@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-script that takes in a URL and displays the value of the variable X-Request-Id in the response header
+displays the value of the variable X-Request-Id in the response header
 """
 from sys import argv
 import requests

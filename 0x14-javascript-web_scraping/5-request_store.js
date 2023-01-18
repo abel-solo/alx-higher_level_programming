@@ -1,7 +1,4 @@
 #!/usr/bin/node
-const fs = require('fs');
-const request = require('request');
-const endpt = process.argv[2]
-const file = process.argv[3]
-
-request(endpt).pipe(fs.createWriteStream(file));
+let fs = require('fs');
+let request = require('request');
+request(process.argv[2]).pipe(fs.createWriteStream(process.argv[3]));

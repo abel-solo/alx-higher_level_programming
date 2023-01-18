@@ -1,6 +1,5 @@
 #!/usr/bin/node
 const request = require('request');
-const endpoint = process.argv[2]
 request(process.argv[2], function (err, response, body) {
   if (!err) {
     const todos = JSON.parse(body);

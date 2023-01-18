@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const request = require('request');
 const endpoint = process.argv[2]
-request(endpoint, function (err, response, body) {
+request((endpoint), function (err, response, body) {
   if (!err) {
     const todos = JSON.parse(body);
     const completed = {};

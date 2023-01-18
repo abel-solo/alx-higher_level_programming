@@ -1,7 +1,6 @@
 #!/usr/bin/node
 const request = require('request');
-const endpoint = process.argv[2]
-request(endpoint, function (err, response, body) {
+request(process.argv[2], function (err, response, body) {
   if (!err) {
     const tasks = JSON.parse(body);
     const done = {};
